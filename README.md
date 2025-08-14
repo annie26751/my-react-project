@@ -90,18 +90,62 @@ flowchart LR
 ## 📂 폴더 구조 예시
 
 ```text
-rag-law-assistant/
-│
-├── app.py                  # Flask 백엔드 엔트리포인트
-├── requirements.txt        # 패키지 목록
-├── README.md               # 프로젝트 설명서
-├── .env.example            # API 키 예시
-│
-├── data/                   # 원본 계약서 및 법령 데이터
-├── embeddings/             # 임베딩 캐시(선택)
-├── static/                 # JS, CSS, 이미지
-├── templates/              # HTML 템플릿
-└── docs/                   # 프로젝트 문서, 아키텍처
+
+├── README.md
+├── backend
+│   ├── data
+│   │   ├── GAS SALE AND PURCHASE AGREEMENT.pdf
+│   │   ├── JOINT OPERATING AGREEMENT.pdf
+│   │   ├── MODEL PRODUCTION SHARING AGREEMENT.pdf
+│   │   ├── PURCHASE AND SALE AGREEMENT.pdf
+│   │   ├── TECHNICAL SERVICES AGREEMENT.pdf
+│   │   ├── ground_truth.xlsx
+│   │   ├── model_truth.xlsx
+│   │   ├── ndcg_binary_match.xlsx
+│   │   ├── system_prompt.txt
+│   │   ├── ~$ground_truth.xlsx
+│   │   └── ~$model_truth.xlsx
+│   ├── main.py
+│   ├── ndcg_eval.py
+│   ├── output
+│   │     ├──
+│   ├── rag.py
+│   ├── test_contract_termination_to_xlsx.py
+│   └── venv
+│       ├── Include
+│       ├── Lib
+│       ├── Scripts
+│       └── pyvenv.cfg
+├── frontend
+│   ├── README.md
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.test.tsx
+│   │   ├── App.tsx
+│   │   ├── MainPage.css
+│   │   ├── MainPage.tsx
+│   │   ├── SearchPage.css
+│   │   ├── SearchPage.tsx
+│   │   ├── assets
+│   │   ├── index.css
+│   │   ├── index.tsx
+│   │   ├── logo.svg
+│   │   ├── react-app-env.d.ts
+│   │   ├── reportWebVitals.ts
+│   │   ├── setupTests.ts
+│   │   ├── types.ts
+│   │   └── useIntersectionObserver.ts
+│   └── tsconfig.json
+└── uvicorn
 ```
 
 <br>
