@@ -1,7 +1,9 @@
 # 글로벌 계약 정보 검색 시스템 'aSK'
 
 <div align="center">
+
 ![](frontend/src/assets/logo.png)
+
 </div>
 
 > **팀명:** 17℃  
