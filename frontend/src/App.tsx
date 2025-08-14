@@ -5,12 +5,12 @@ import SearchPage from './SearchPage';
 
 function App() {
   return (
-    <HashRouter> {/* 2. BrowserRouter를 HashRouter로 교체하고, basename 속성은 삭제합니다. */}
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/search" element={<SearchPage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
